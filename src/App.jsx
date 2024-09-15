@@ -5,27 +5,31 @@ export function App(){
         {
             userName: 'ESPN',
             name:'ESPN',
-            isFollowing: false
+            isFollowing: false,
+            link:'https://x.com/espn'
         },
         {
             userName: 'cnnbrk',
             name:'CNN Breaking News',
-            isFollowing: true
+            isFollowing: true,
+            link:'https://x.com/cnn'
         },
         {
             userName: 'cristiano',
             name:'Cristiano Ronaldo',
-            isFollowing: true
+            isFollowing: true,
+            link:'https://x.com/cristiano'
         }
     ]
     return(
         <section className='App'>
             {
-                users.map(({userName, name, isFollowing}) => (
+                users.map(({userName, name, isFollowing, link}) => (
                     <TwitterFollowCard
                         key={userName}
                         userName={userName}
                         initialIsFollowing={isFollowing}
+                        link={link}
                     >
                         
                         {name}

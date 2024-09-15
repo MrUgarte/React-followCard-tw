@@ -72,4 +72,8 @@
 .tw-followCard-stopFollow {
   display: none;
 }
-  
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
